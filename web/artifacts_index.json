@@ -1,0 +1,383 @@
+{
+  "project_root": "/root/autodl-tmp/PPO/navagent_ppo",
+  "comparison_table": "logs/eval/comparison_table.csv",
+  "runs": [
+    {
+      "run_name": "exp00_astar",
+      "policy": "astar_oracle",
+      "stage": "baseline",
+      "config": null,
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_astar/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_astar/success_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_greedy",
+      "policy": "greedy",
+      "stage": "baseline",
+      "config": null,
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_greedy/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_greedy/success_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_heuristic",
+      "policy": "heuristic",
+      "stage": "baseline",
+      "config": null,
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_heuristic/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_heuristic/success_episode.json"
+      ],
+      "html_replays": [
+        "replays/exp00_heuristic/success_episode.html"
+      ],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_multitask_astar",
+      "policy": "astar_oracle",
+      "stage": "baseline",
+      "config": "configs/env_multitask.yaml",
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_multitask_astar/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_multitask_astar/success_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_multitask_greedy",
+      "policy": "greedy",
+      "stage": "baseline",
+      "config": "configs/env_multitask.yaml",
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_multitask_greedy/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_multitask_greedy/failure_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_multitask_heuristic",
+      "policy": "heuristic",
+      "stage": "baseline",
+      "config": "configs/env_multitask.yaml",
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_multitask_heuristic/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_multitask_heuristic/success_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_multitask_random",
+      "policy": "random",
+      "stage": "baseline",
+      "config": "configs/env_multitask.yaml",
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_multitask_random/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_multitask_random/failure_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_obstacle_astar",
+      "policy": "astar_oracle",
+      "stage": "baseline",
+      "config": "configs/env_obstacle.yaml",
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_obstacle_astar/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_obstacle_astar/success_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_obstacle_greedy",
+      "policy": "greedy",
+      "stage": "baseline",
+      "config": "configs/env_obstacle.yaml",
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_obstacle_greedy/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_obstacle_greedy/failure_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_obstacle_heuristic",
+      "policy": "heuristic",
+      "stage": "baseline",
+      "config": "configs/env_obstacle.yaml",
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_obstacle_heuristic/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_obstacle_heuristic/success_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_obstacle_random",
+      "policy": "random",
+      "stage": "baseline",
+      "config": "configs/env_obstacle.yaml",
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_obstacle_random/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_obstacle_random/failure_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_random",
+      "policy": "random",
+      "stage": "baseline",
+      "config": null,
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_random/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_random/failure_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_randomized_astar",
+      "policy": "astar_oracle",
+      "stage": "randomized",
+      "config": "configs/env_randomized.yaml",
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_randomized_astar/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_randomized_astar/success_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_randomized_greedy",
+      "policy": "greedy",
+      "stage": "randomized",
+      "config": "configs/env_randomized.yaml",
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_randomized_greedy/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_randomized_greedy/failure_episode.json",
+        "replays/exp00_randomized_greedy/success_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp00_randomized_random",
+      "policy": "random",
+      "stage": "randomized",
+      "config": "configs/env_randomized.yaml",
+      "model_path": null,
+      "final_model_path": null,
+      "eval_files": [
+        "logs/eval/exp00_randomized_random/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp00_randomized_random/failure_episode.json"
+      ],
+      "html_replays": [],
+      "training_logs": []
+    },
+    {
+      "run_name": "exp01_basic_ppo",
+      "policy": "ppo",
+      "stage": "basic",
+      "config": "configs/env_basic.yaml",
+      "model_path": "models/exp01_basic_ppo/best_model.zip",
+      "final_model_path": "models/exp01_basic_ppo/final_model.zip",
+      "eval_files": [
+        "logs/eval/exp01_basic_ppo/evaluation.json"
+      ],
+      "replay_files": [
+        "replays/exp01_basic_ppo/success_episode.json"
+      ],
+      "html_replays": [
+        "replays/exp01_basic_ppo/success_episode.html"
+      ],
+      "training_logs": [
+        "logs/monitor/exp01_basic_ppo/monitor.csv",
+        "logs/tensorboard/exp01_basic_ppo/PPO_1/events.out.tfevents.1780881977.chenxinyu.42384.0"
+      ]
+    },
+    {
+      "run_name": "exp03_curriculum_stage1_ppo",
+      "policy": "ppo",
+      "stage": "stage1",
+      "config": "configs/env_curriculum_stage1.yaml",
+      "model_path": "models/exp03_curriculum_stage1_ppo/best_model.zip",
+      "final_model_path": "models/exp03_curriculum_stage1_ppo/final_model.zip",
+      "eval_files": [
+        "logs/eval/exp03_curriculum_stage1_ppo/evaluation.json",
+        "logs/eval/exp03_curriculum_stage1_ppo/evaluation_seed0_300.json",
+        "logs/eval/exp03_curriculum_stage1_ppo/evaluation_seed1_300.json",
+        "logs/eval/exp03_curriculum_stage1_ppo/evaluation_seed2_300.json",
+        "logs/eval/exp03_curriculum_stage1_ppo/evaluation_summary_multi_seed.json"
+      ],
+      "replay_files": [
+        "replays/exp03_curriculum_stage1_ppo/failure_episode.json",
+        "replays/exp03_curriculum_stage1_ppo/failure_or_worst_episode.json",
+        "replays/exp03_curriculum_stage1_ppo/seed0/failure_episode.json",
+        "replays/exp03_curriculum_stage1_ppo/seed0/success_episode.json",
+        "replays/exp03_curriculum_stage1_ppo/seed1/failure_episode.json",
+        "replays/exp03_curriculum_stage1_ppo/seed1/success_episode.json",
+        "replays/exp03_curriculum_stage1_ppo/seed2/failure_episode.json",
+        "replays/exp03_curriculum_stage1_ppo/seed2/success_episode.json",
+        "replays/exp03_curriculum_stage1_ppo/success_episode.json"
+      ],
+      "html_replays": [
+        "replays/exp03_curriculum_stage1_ppo/failure_episode.html",
+        "replays/exp03_curriculum_stage1_ppo/failure_or_worst_episode.html",
+        "replays/exp03_curriculum_stage1_ppo/interactive_success.html",
+        "replays/exp03_curriculum_stage1_ppo/seed0/failure_episode.html",
+        "replays/exp03_curriculum_stage1_ppo/seed0/success_episode.html",
+        "replays/exp03_curriculum_stage1_ppo/seed1/failure_episode.html",
+        "replays/exp03_curriculum_stage1_ppo/seed1/success_episode.html",
+        "replays/exp03_curriculum_stage1_ppo/seed2/failure_episode.html",
+        "replays/exp03_curriculum_stage1_ppo/seed2/success_episode.html",
+        "replays/exp03_curriculum_stage1_ppo/success_episode.html"
+      ],
+      "training_logs": [
+        "logs/monitor/exp03_curriculum_stage1_ppo/monitor.csv",
+        "logs/tensorboard/exp03_curriculum_stage1_ppo/PPO_1/events.out.tfevents.1780882582.chenxinyu.54316.0"
+      ]
+    },
+    {
+      "run_name": "exp04_curriculum_stage2_ppo",
+      "policy": "ppo",
+      "stage": "stage2",
+      "config": "configs/env_curriculum_stage2.yaml",
+      "model_path": "models/exp04_curriculum_stage2_ppo/best_model.zip",
+      "final_model_path": "models/exp04_curriculum_stage2_ppo/final_model.zip",
+      "eval_files": [
+        "logs/eval/exp04_curriculum_stage2_ppo/evaluation.json",
+        "logs/eval/exp04_curriculum_stage2_ppo/evaluation_seed0_300.json"
+      ],
+      "replay_files": [
+        "replays/exp04_curriculum_stage2_ppo/best_partial_episode.json",
+        "replays/exp04_curriculum_stage2_ppo/failure_episode.json",
+        "replays/exp04_curriculum_stage2_ppo/failure_or_worst_episode.json",
+        "replays/exp04_curriculum_stage2_ppo/seed0/failure_episode.json",
+        "replays/exp04_curriculum_stage2_ppo/seed0/success_episode.json",
+        "replays/exp04_curriculum_stage2_ppo/success_episode.json"
+      ],
+      "html_replays": [
+        "replays/exp04_curriculum_stage2_ppo/best_partial_episode.html",
+        "replays/exp04_curriculum_stage2_ppo/failure_episode.html",
+        "replays/exp04_curriculum_stage2_ppo/failure_or_worst_episode.html",
+        "replays/exp04_curriculum_stage2_ppo/seed0/failure_episode.html",
+        "replays/exp04_curriculum_stage2_ppo/seed0/success_episode.html",
+        "replays/exp04_curriculum_stage2_ppo/success_episode.html"
+      ],
+      "training_logs": [
+        "logs/monitor/exp04_curriculum_stage2_ppo/monitor.csv",
+        "logs/tensorboard/exp04_curriculum_stage2_ppo/PPO_1/events.out.tfevents.1780884318.chenxinyu.31648.0",
+        "logs/tensorboard/exp04_curriculum_stage2_ppo/PPO_1/events.out.tfevents.1780884502.chenxinyu.56364.0"
+      ]
+    },
+    {
+      "run_name": "exp05_curriculum_stage3_ppo",
+      "policy": "ppo",
+      "stage": "stage3",
+      "config": "configs/env_curriculum_stage3.yaml",
+      "model_path": "models/exp05_curriculum_stage3_ppo/best_model.zip",
+      "final_model_path": "models/exp05_curriculum_stage3_ppo/final_model.zip",
+      "eval_files": [
+        "logs/eval/exp05_curriculum_stage3_ppo/evaluation.json",
+        "logs/eval/exp05_curriculum_stage3_ppo/evaluation_seed0_300.json"
+      ],
+      "replay_files": [
+        "replays/exp05_curriculum_stage3_ppo/failure_episode.json",
+        "replays/exp05_curriculum_stage3_ppo/failure_or_worst_episode.json",
+        "replays/exp05_curriculum_stage3_ppo/seed0/failure_episode.json",
+        "replays/exp05_curriculum_stage3_ppo/seed0/success_episode.json",
+        "replays/exp05_curriculum_stage3_ppo/success_episode.json"
+      ],
+      "html_replays": [
+        "replays/exp05_curriculum_stage3_ppo/failure_episode.html",
+        "replays/exp05_curriculum_stage3_ppo/failure_or_worst_episode.html",
+        "replays/exp05_curriculum_stage3_ppo/seed0/failure_episode.html",
+        "replays/exp05_curriculum_stage3_ppo/seed0/success_episode.html",
+        "replays/exp05_curriculum_stage3_ppo/success_episode.html"
+      ],
+      "training_logs": [
+        "logs/monitor/exp05_curriculum_stage3_ppo/monitor.csv",
+        "logs/tensorboard/exp05_curriculum_stage3_ppo/PPO_0/events.out.tfevents.1780884912.chenxinyu.49388.0"
+      ]
+    }
+  ],
+  "missing": {
+    "comparison_table": false,
+    "logs_eval": false,
+    "replays": false,
+    "models": false,
+    "monitor_logs": false,
+    "tensorboard_logs": false
+  }
+}

@@ -1,0 +1,32 @@
+level: randomized
+map:
+  size: 8
+  random_start: true
+  random_targets: true
+  num_targets_range: [1, 2]
+  random_obstacles: true
+  obstacle_density_range: [0.00, 0.06]
+  ensure_solvable: true
+  max_generation_retry: 100
+battery:
+  mode: shortest_path_budget
+  budget_factor_range: [1.50, 1.90]
+  min_battery: 35
+episode:
+  max_steps: 120
+reset:
+  seed: null
+  randomized_each_episode: true
+reward_mode: dense
+target_selection: nearest
+reward:
+  task_bonus: 10.0
+  return_bonus: 20.0
+  collision_penalty: -1.0
+  timeout_penalty: -5.0
+  battery_out_penalty: -10.0
+  step_penalty: -0.015
+  target_distance_coef: 0.20
+  base_distance_coef_low_battery: 0.10
+  revisit_penalty: -0.02
+  llm_subgoal_coef: 0.0

@@ -1,0 +1,1405 @@
+{
+  "run_name": "exp00_astar",
+  "policy": "astar_oracle",
+  "use_planner": false,
+  "episode_index": 0,
+  "summary": {
+    "episode_index": 0,
+    "success": true,
+    "completed_targets": 1,
+    "total_targets": 1,
+    "returned_to_base": true,
+    "episode_reward": 29.76,
+    "episode_length": 24,
+    "path_length": 24,
+    "collision_count": 0,
+    "repeated_cell_count": 12,
+    "remaining_battery": 76.0,
+    "done_reason": "success",
+    "agent_final_position": [
+      0,
+      0
+    ],
+    "base_position": [
+      0,
+      0
+    ],
+    "shortest_possible_path_length": 24,
+    "path_efficiency": 1.0,
+    "normalized_reward": 0.9920000000000001,
+    "mean_planning_time_ms": 0.1645124987893117
+  },
+  "config": {
+    "level": "basic",
+    "grid_size": [
+      8,
+      8
+    ],
+    "base": [
+      0,
+      0
+    ],
+    "start": [
+      0,
+      0
+    ],
+    "targets": [
+      [
+        6,
+        6
+      ]
+    ],
+    "obstacles": [],
+    "max_steps": 80,
+    "max_battery": 100,
+    "reward_mode": "sparse",
+    "randomized_each_episode": null
+  },
+  "memory": [],
+  "frames": [
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [],
+      "battery": 100.0,
+      "max_battery": 100.0,
+      "step": 0,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        6,
+        6
+      ],
+      "current_target": [
+        6,
+        6
+      ],
+      "action": null,
+      "action_name": "start",
+      "reward": 0.0,
+      "cumulative_reward": 0.0,
+      "action_probabilities": null,
+      "planner_output": null,
+      "planning_time_ms": 0.0
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [],
+      "battery": 99.0,
+      "max_battery": 100.0,
+      "step": 1,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        6,
+        6
+      ],
+      "current_target": [
+        6,
+        6
+      ],
+      "action": 1,
+      "action_name": "down",
+      "reward": -0.01,
+      "cumulative_reward": -0.01,
+      "action_probabilities": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.44430000707507133
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        2
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [],
+      "battery": 98.0,
+      "max_battery": 100.0,
+      "step": 2,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        6,
+        6
+      ],
+      "current_target": [
+        6,
+        6
+      ],
+      "action": 1,
+      "action_name": "down",
+      "reward": -0.01,
+      "cumulative_reward": -0.02,
+      "action_probabilities": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.3989000106230378
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [],
+      "battery": 97.0,
+      "max_battery": 100.0,
+      "step": 3,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        6,
+        6
+      ],
+      "current_target": [
+        6,
+        6
+      ],
+      "action": 1,
+      "action_name": "down",
+      "reward": -0.01,
+      "cumulative_reward": -0.03,
+      "action_probabilities": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.34359999699518085
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [],
+      "battery": 96.0,
+      "max_battery": 100.0,
+      "step": 4,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        6,
+        6
+      ],
+      "current_target": [
+        6,
+        6
+      ],
+      "action": 1,
+      "action_name": "down",
+      "reward": -0.01,
+      "cumulative_reward": -0.04,
+      "action_probabilities": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.29579998226836324
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [],
+      "battery": 95.0,
+      "max_battery": 100.0,
+      "step": 5,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        6,
+        6
+      ],
+      "current_target": [
+        6,
+        6
+      ],
+      "action": 1,
+      "action_name": "down",
+      "reward": -0.01,
+      "cumulative_reward": -0.05,
+      "action_probabilities": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.27249997947365046
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [],
+      "battery": 94.0,
+      "max_battery": 100.0,
+      "step": 6,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        6,
+        6
+      ],
+      "current_target": [
+        6,
+        6
+      ],
+      "action": 1,
+      "action_name": "down",
+      "reward": -0.01,
+      "cumulative_reward": -0.060000000000000005,
+      "action_probabilities": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.24020002456381917
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        1,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [],
+      "battery": 93.0,
+      "max_battery": 100.0,
+      "step": 7,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        6,
+        6
+      ],
+      "current_target": [
+        6,
+        6
+      ],
+      "action": 3,
+      "action_name": "right",
+      "reward": -0.01,
+      "cumulative_reward": -0.07,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.19300001440569758
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        2,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [],
+      "battery": 92.0,
+      "max_battery": 100.0,
+      "step": 8,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        6,
+        6
+      ],
+      "current_target": [
+        6,
+        6
+      ],
+      "action": 3,
+      "action_name": "right",
+      "reward": -0.01,
+      "cumulative_reward": -0.08,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.2099000266753137
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        3,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [],
+      "battery": 91.0,
+      "max_battery": 100.0,
+      "step": 9,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        6,
+        6
+      ],
+      "current_target": [
+        6,
+        6
+      ],
+      "action": 3,
+      "action_name": "right",
+      "reward": -0.01,
+      "cumulative_reward": -0.09,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.2185999765060842
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        4,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [],
+      "battery": 90.0,
+      "max_battery": 100.0,
+      "step": 10,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        6,
+        6
+      ],
+      "current_target": [
+        6,
+        6
+      ],
+      "action": 3,
+      "action_name": "right",
+      "reward": -0.01,
+      "cumulative_reward": -0.09999999999999999,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.228899996727705
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        5,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [],
+      "battery": 89.0,
+      "max_battery": 100.0,
+      "step": 11,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        6,
+        6
+      ],
+      "current_target": [
+        6,
+        6
+      ],
+      "action": 3,
+      "action_name": "right",
+      "reward": -0.01,
+      "cumulative_reward": -0.10999999999999999,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.24149997625499964
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        6,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 88.0,
+      "max_battery": 100.0,
+      "step": 12,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 3,
+      "action_name": "right",
+      "reward": 9.99,
+      "cumulative_reward": 9.88,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.26810000417754054
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        5,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 87.0,
+      "max_battery": 100.0,
+      "step": 13,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 1,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 2,
+      "action_name": "left",
+      "reward": -0.01,
+      "cumulative_reward": 9.870000000000001,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.12939999578520656
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        4,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 86.0,
+      "max_battery": 100.0,
+      "step": 14,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 2,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 2,
+      "action_name": "left",
+      "reward": -0.01,
+      "cumulative_reward": 9.860000000000001,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.11169997742399573
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        3,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 85.0,
+      "max_battery": 100.0,
+      "step": 15,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 3,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 2,
+      "action_name": "left",
+      "reward": -0.01,
+      "cumulative_reward": 9.850000000000001,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.09460002183914185
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        2,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 84.0,
+      "max_battery": 100.0,
+      "step": 16,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 4,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 2,
+      "action_name": "left",
+      "reward": -0.01,
+      "cumulative_reward": 9.840000000000002,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.08000002708286047
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        1,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 83.0,
+      "max_battery": 100.0,
+      "step": 17,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 5,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 2,
+      "action_name": "left",
+      "reward": -0.01,
+      "cumulative_reward": 9.830000000000002,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.0591999851167202
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 82.0,
+      "max_battery": 100.0,
+      "step": 18,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 6,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 2,
+      "action_name": "left",
+      "reward": -0.01,
+      "cumulative_reward": 9.820000000000002,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.03890000516548753
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 81.0,
+      "max_battery": 100.0,
+      "step": 19,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 7,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.01,
+      "cumulative_reward": 9.810000000000002,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.02099998528137803
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 80.0,
+      "max_battery": 100.0,
+      "step": 20,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 8,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.01,
+      "cumulative_reward": 9.800000000000002,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.01639995025470853
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 79.0,
+      "max_battery": 100.0,
+      "step": 21,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 9,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.01,
+      "cumulative_reward": 9.790000000000003,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.013599987141788006
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        2
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 78.0,
+      "max_battery": 100.0,
+      "step": 22,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 10,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.01,
+      "cumulative_reward": 9.780000000000003,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.012400036212056875
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 77.0,
+      "max_battery": 100.0,
+      "step": 23,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 11,
+      "shortest_possible_path_length": 24,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.01,
+      "cumulative_reward": 9.770000000000003,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.008100003469735384
+    },
+    {
+      "grid_size": [
+        8,
+        8
+      ],
+      "agent_position": [
+        0,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            6,
+            6
+          ],
+          "visited": true
+        }
+      ],
+      "obstacles": [],
+      "battery": 76.0,
+      "max_battery": 100.0,
+      "step": 24,
+      "max_steps": 80,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 12,
+      "shortest_possible_path_length": 24,
+      "done_reason": "success",
+      "llm_subgoal": [
+        0,
+        0
+      ],
+      "current_target": [
+        0,
+        0
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": 19.99,
+      "cumulative_reward": 29.76,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.007700000423938036
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+.venv/
+venv/
+env/
+.env
+*.conda
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Temporary
+cloudflared
+*.log
+*.tmp
+
+# Large raw archives
+*.zip
+PPO.zip
+
+# Optional: keep source code and selected results, avoid huge tensorboard cache if needed
+logs/tensorboard/

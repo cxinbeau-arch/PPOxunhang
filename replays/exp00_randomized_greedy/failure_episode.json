@@ -1,0 +1,8757 @@
+{
+  "run_name": "exp00_randomized_greedy",
+  "policy": "greedy",
+  "use_planner": false,
+  "episode_index": 0,
+  "summary": {
+    "episode_index": 0,
+    "success": false,
+    "completed_targets": 0,
+    "total_targets": 3,
+    "returned_to_base": true,
+    "episode_reward": -11.0,
+    "episode_length": 53,
+    "path_length": 53,
+    "collision_count": 0,
+    "repeated_cell_count": 39,
+    "remaining_battery": 0.0,
+    "done_reason": "battery_out",
+    "agent_final_position": [
+      0,
+      0
+    ],
+    "base_position": [
+      0,
+      0
+    ],
+    "shortest_possible_path_length": 41,
+    "path_efficiency": 0.0,
+    "normalized_reward": -0.22,
+    "mean_planning_time_ms": 0.007369809230473244
+  },
+  "config": {
+    "level": "randomized",
+    "grid_size": [
+      12,
+      12
+    ],
+    "base": [
+      0,
+      0
+    ],
+    "start": [
+      0,
+      0
+    ],
+    "targets": [
+      [
+        10,
+        10
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        9,
+        2
+      ]
+    ],
+    "obstacles": [],
+    "max_steps": 180,
+    "max_battery": 120,
+    "reward_mode": "dense",
+    "randomized_each_episode": true
+  },
+  "memory": [],
+  "frames": [
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        8
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 53.0,
+      "max_battery": 53.0,
+      "step": 0,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": null,
+      "action_name": "start",
+      "reward": 0.0,
+      "cumulative_reward": 0.0,
+      "action_probabilities": null,
+      "planner_output": null,
+      "planning_time_ms": 0.0
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        9
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 52.0,
+      "max_battery": 53.0,
+      "step": 1,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 1,
+      "action_name": "down",
+      "reward": 0.16,
+      "cumulative_reward": 0.16,
+      "action_probabilities": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.024800014216452837
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        10
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 51.0,
+      "max_battery": 53.0,
+      "step": 2,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 1,
+      "action_name": "down",
+      "reward": 0.16,
+      "cumulative_reward": 0.32,
+      "action_probabilities": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.014499993994832039
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 50.0,
+      "max_battery": 53.0,
+      "step": 3,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 0,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 1,
+      "action_name": "down",
+      "reward": 0.16,
+      "cumulative_reward": 0.48,
+      "action_probabilities": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.011599971912801266
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 49.0,
+      "max_battery": 53.0,
+      "step": 4,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 1,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.45999999999999996,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.008800008799880743
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 48.0,
+      "max_battery": 53.0,
+      "step": 5,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 2,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.43999999999999995,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.008500006515532732
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 47.0,
+      "max_battery": 53.0,
+      "step": 6,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 3,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.41999999999999993,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.007599999662488699
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 46.0,
+      "max_battery": 53.0,
+      "step": 7,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 4,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.3999999999999999,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.007299997378140688
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 45.0,
+      "max_battery": 53.0,
+      "step": 8,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 5,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.3799999999999999,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.009300012607127428
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 44.0,
+      "max_battery": 53.0,
+      "step": 9,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 6,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.3599999999999999,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.00689999433234334
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 43.0,
+      "max_battery": 53.0,
+      "step": 10,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 7,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.33999999999999986,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.00689999433234334
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 42.0,
+      "max_battery": 53.0,
+      "step": 11,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 8,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.31999999999999984,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.007499998901039362
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 41.0,
+      "max_battery": 53.0,
+      "step": 12,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 9,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.2999999999999998,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.008100003469735384
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 40.0,
+      "max_battery": 53.0,
+      "step": 13,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 10,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.2799999999999998,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006999995093792677
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 39.0,
+      "max_battery": 53.0,
+      "step": 14,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 11,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.2599999999999998,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.00689999433234334
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 38.0,
+      "max_battery": 53.0,
+      "step": 15,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 12,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.2399999999999998,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006999995093792677
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 37.0,
+      "max_battery": 53.0,
+      "step": 16,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 13,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.2199999999999998,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006399990525096655
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 36.0,
+      "max_battery": 53.0,
+      "step": 17,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 14,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.19999999999999982,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006799993570894003
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 35.0,
+      "max_battery": 53.0,
+      "step": 18,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 15,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.17999999999999983,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.007299997378140688
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 34.0,
+      "max_battery": 53.0,
+      "step": 19,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 16,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.15999999999999984,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006499991286545992
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 33.0,
+      "max_battery": 53.0,
+      "step": 20,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 17,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.13999999999999985,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006399990525096655
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 32.0,
+      "max_battery": 53.0,
+      "step": 21,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 18,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.11999999999999984,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006599992047995329
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 31.0,
+      "max_battery": 53.0,
+      "step": 22,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 19,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.09999999999999984,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006499991286545992
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 30.0,
+      "max_battery": 53.0,
+      "step": 23,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 20,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.07999999999999984,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006399990525096655
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 29.0,
+      "max_battery": 53.0,
+      "step": 24,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 21,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.05999999999999983,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.00689999433234334
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 28.0,
+      "max_battery": 53.0,
+      "step": 25,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 22,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.03999999999999983,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006799993570894003
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 27.0,
+      "max_battery": 53.0,
+      "step": 26,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 23,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": 0.019999999999999827,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.007099995855242014
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 26.0,
+      "max_battery": 53.0,
+      "step": 27,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 24,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": -1.734723475976807e-16,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.007299997378140688
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 25.0,
+      "max_battery": 53.0,
+      "step": 28,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 25,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": -0.020000000000000174,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006499991286545992
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 24.0,
+      "max_battery": 53.0,
+      "step": 29,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 26,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": -0.040000000000000174,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006599992047995329
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 23.0,
+      "max_battery": 53.0,
+      "step": 30,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 27,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": -0.06000000000000018,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006999995093792677
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 22.0,
+      "max_battery": 53.0,
+      "step": 31,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 28,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": -0.08000000000000018,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.007399998139590025
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 21.0,
+      "max_battery": 53.0,
+      "step": 32,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 29,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": -0.10000000000000019,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006699992809444666
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 20.0,
+      "max_battery": 53.0,
+      "step": 33,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 30,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": -0.12000000000000019,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006699992809444666
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 19.0,
+      "max_battery": 53.0,
+      "step": 34,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 31,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": -0.14000000000000018,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006799993570894003
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 18.0,
+      "max_battery": 53.0,
+      "step": 35,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 32,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": -0.16000000000000017,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.00689999433234334
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 17.0,
+      "max_battery": 53.0,
+      "step": 36,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 33,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": -0.18000000000000016,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006699992809444666
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        10
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 16.0,
+      "max_battery": 53.0,
+      "step": 37,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 34,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.2600000000000001,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.005499983672052622
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        9
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 15.0,
+      "max_battery": 53.0,
+      "step": 38,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 35,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.3400000000000001,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.007499998901039362
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        8
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 14.0,
+      "max_battery": 53.0,
+      "step": 39,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 36,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.42000000000000004,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006799993570894003
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        3,
+        7
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 13.0,
+      "max_battery": 53.0,
+      "step": 40,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 36,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        7,
+        5
+      ],
+      "current_target": [
+        7,
+        5
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.5,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006599992047995329
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        2,
+        7
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 12.0,
+      "max_battery": 53.0,
+      "step": 41,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 36,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 2,
+      "action_name": "left",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.58,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006599992047995329
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        1,
+        7
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 11.0,
+      "max_battery": 53.0,
+      "step": 42,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 36,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 2,
+      "action_name": "left",
+      "reward": 0.28,
+      "cumulative_reward": -0.29999999999999993,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006199989002197981
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        1,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 10.0,
+      "max_battery": 53.0,
+      "step": 43,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 36,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.3799999999999999,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006600050255656242
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        1,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 9.0,
+      "max_battery": 53.0,
+      "step": 44,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 36,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        7,
+        5
+      ],
+      "current_target": [
+        7,
+        5
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.45999999999999985,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.005900044925510883
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        1,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 8.0,
+      "max_battery": 53.0,
+      "step": 45,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 36,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        7,
+        5
+      ],
+      "current_target": [
+        7,
+        5
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.5399999999999998,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006299989763647318
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        0,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 7.0,
+      "max_battery": 53.0,
+      "step": 46,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 36,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 2,
+      "action_name": "left",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.6199999999999998,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.005999987479299307
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        0,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 6.0,
+      "max_battery": 53.0,
+      "step": 47,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 36,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.6999999999999997,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006499991286545992
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        0,
+        2
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 5.0,
+      "max_battery": 53.0,
+      "step": 48,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 36,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.7799999999999997,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006199989002197981
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        0,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 4.0,
+      "max_battery": 53.0,
+      "step": 49,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 36,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        0,
+        11
+      ],
+      "current_target": [
+        0,
+        11
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.8599999999999997,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.006399990525096655
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        0,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 3.0,
+      "max_battery": 53.0,
+      "step": 50,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 36,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        11,
+        0
+      ],
+      "current_target": [
+        11,
+        0
+      ],
+      "action": 0,
+      "action_name": "up",
+      "reward": -0.07999999999999999,
+      "cumulative_reward": -0.9399999999999996,
+      "action_probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.005800044164061546
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        0,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 2.0,
+      "max_battery": 53.0,
+      "step": 51,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 37,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        11,
+        0
+      ],
+      "current_target": [
+        11,
+        0
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": -0.9599999999999996,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.005799985956400633
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        0,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 1.0,
+      "max_battery": 53.0,
+      "step": 52,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 38,
+      "shortest_possible_path_length": 41,
+      "done_reason": "running",
+      "llm_subgoal": [
+        11,
+        0
+      ],
+      "current_target": [
+        11,
+        0
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -0.02,
+      "cumulative_reward": -0.9799999999999996,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.005499983672052622
+    },
+    {
+      "grid_size": [
+        12,
+        12
+      ],
+      "agent_position": [
+        0,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "targets": [
+        {
+          "position": [
+            11,
+            0
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            7,
+            5
+          ],
+          "visited": false
+        },
+        {
+          "position": [
+            0,
+            11
+          ],
+          "visited": false
+        }
+      ],
+      "obstacles": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "battery": 0.0,
+      "max_battery": 53.0,
+      "step": 53,
+      "max_steps": 180,
+      "collision_count": 0,
+      "revisit_count": 0,
+      "repeated_cell_count": 39,
+      "shortest_possible_path_length": 41,
+      "done_reason": "battery_out",
+      "llm_subgoal": [
+        11,
+        0
+      ],
+      "current_target": [
+        11,
+        0
+      ],
+      "action": 4,
+      "action_name": "stay",
+      "reward": -10.02,
+      "cumulative_reward": -11.0,
+      "action_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "planner_output": null,
+      "planning_time_ms": 0.005400041118264198
+    }
+  ]
+}

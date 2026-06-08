@@ -1,0 +1,30 @@
+{
+  "run_name": "exp03_curriculum_stage1_ppo",
+  "config": "configs/env_curriculum_stage1.yaml",
+  "model_path": "models/exp03_curriculum_stage1_ppo/best_model.zip",
+  "episodes_per_seed": 300,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "success_rate_mean": 0.85,
+  "success_rate_std": 0.0,
+  "task_completion_rate_mean": 0.915,
+  "task_completion_rate_std": 0.0,
+  "return_to_base_rate_mean": 0.85,
+  "return_to_base_rate_std": 0.0,
+  "mean_episode_reward_mean": 28.658916666666666,
+  "mean_episode_reward_std": 0.01951857140339993,
+  "mean_episode_length_mean": 17.441111111111113,
+  "mean_episode_length_std": 0.02114033065604383,
+  "battery_out_rate_mean": 0.15,
+  "battery_out_rate_std": 0.0,
+  "collision_episode_rate_mean": 0.10666666666666667,
+  "collision_episode_rate_std": 0.0,
+  "mean_completed_targets_mean": 1.3611111111111112,
+  "mean_completed_targets_std": 0.001571348402636704,
+  "path_efficiency_mean": 0.8236681004004935,
+  "path_efficiency_std": 0.00011443993968785268,
+  "pass_stage1_multi_seed": false
+}

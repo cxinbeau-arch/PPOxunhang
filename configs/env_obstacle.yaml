@@ -1,0 +1,35 @@
+level: obstacle
+grid_size: [10, 10]
+base: [0, 0]
+start: [0, 0]
+targets:
+  - [8, 8]
+  - [1, 8]
+obstacles:
+  - [3, 0]
+  - [3, 1]
+  - [3, 2]
+  - [3, 3]
+  - [3, 5]
+  - [3, 6]
+  - [3, 7]
+  - [6, 3]
+  - [7, 3]
+  - [8, 3]
+max_steps: 140
+max_battery: 160
+battery_cost_per_step: 1.0
+reward_mode: dense
+target_selection: nearest
+use_planner_subgoal: false
+reward:
+  task_bonus: 10.0
+  return_bonus: 20.0
+  collision_penalty: -1.2
+  timeout_penalty: -5.0
+  battery_out_penalty: -10.0
+  step_penalty: -0.02
+  target_distance_coef: 0.20
+  base_distance_coef_low_battery: 0.10
+  revisit_penalty: -0.02
+  llm_subgoal_coef: 0.0

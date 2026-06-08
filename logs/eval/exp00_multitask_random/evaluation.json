@@ -1,0 +1,2634 @@
+{
+  "run_name": "exp00_multitask_random",
+  "policy": "random",
+  "use_planner": false,
+  "episodes": 100,
+  "success_rate": 0.0,
+  "task_completion_rate": 0.11,
+  "return_to_base_rate": 0.03,
+  "mean_episode_reward": -46.42579999999996,
+  "mean_episode_length": 180.0,
+  "mean_path_length": 180.0,
+  "collision_rate": 1.0,
+  "collision_episode_rate": 1.0,
+  "mean_collisions": 29.02,
+  "mean_collisions_per_episode": 29.02,
+  "battery_out_rate": 1.0,
+  "timeout_rate": 0.0,
+  "mean_remaining_battery": 0.0,
+  "mean_repeated_cell_count": 149.97,
+  "path_efficiency": 0.0,
+  "normalized_reward": -0.9285159999999992,
+  "mean_completed_targets": 0.33,
+  "completed_1_plus_rate": 0.32,
+  "completed_2_plus_rate": 0.01,
+  "completed_all_rate": 0.0,
+  "completed_all_targets_rate": 0.0,
+  "partial_completion_rate": 0.32,
+  "mean_planning_time_ms": 0.0016963110085473293,
+  "episodes_detail": [
+    {
+      "episode_index": 0,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -38.85999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 20,
+      "repeated_cell_count": 163,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.7771999999999989,
+      "mean_planning_time_ms": 0.001605002196609146
+    },
+    {
+      "episode_index": 1,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -34.659999999999926,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 26,
+      "repeated_cell_count": 140,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        5,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6931999999999985,
+      "mean_planning_time_ms": 0.0015172243971998494
+    },
+    {
+      "episode_index": 2,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": true,
+      "episode_reward": -39.27999999999993,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 22,
+      "repeated_cell_count": 142,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.7855999999999986,
+      "mean_planning_time_ms": 0.0016433309711929825
+    },
+    {
+      "episode_index": 3,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -57.75999999999996,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 34,
+      "repeated_cell_count": 162,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.1551999999999993,
+      "mean_planning_time_ms": 0.0014055533231132561
+    },
+    {
+      "episode_index": 4,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -51.45999999999996,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 31,
+      "repeated_cell_count": 144,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        8,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.0291999999999992,
+      "mean_planning_time_ms": 0.0013611117740058238
+    },
+    {
+      "episode_index": 5,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -60.75999999999998,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 37,
+      "repeated_cell_count": 157,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.2151999999999996,
+      "mean_planning_time_ms": 0.0014888914948743251
+    },
+    {
+      "episode_index": 6,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -32.75999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 25,
+      "repeated_cell_count": 139,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        9,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6551999999999988,
+      "mean_planning_time_ms": 0.0015122250058791703
+    },
+    {
+      "episode_index": 7,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -41.79999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 21,
+      "repeated_cell_count": 141,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        10,
+        8
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.8359999999999989,
+      "mean_planning_time_ms": 0.0013822220757396685
+    },
+    {
+      "episode_index": 8,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -31.639999999999997,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 24,
+      "repeated_cell_count": 145,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        8,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6327999999999999,
+      "mean_planning_time_ms": 0.0025438901502639055
+    },
+    {
+      "episode_index": 9,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -46.71999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 25,
+      "repeated_cell_count": 165,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.934399999999999,
+      "mean_planning_time_ms": 0.001465554103358752
+    },
+    {
+      "episode_index": 10,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -32.059999999999945,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 23,
+      "repeated_cell_count": 127,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        9,
+        7
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6411999999999989,
+      "mean_planning_time_ms": 0.0015088880900293589
+    },
+    {
+      "episode_index": 11,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -57.51999999999998,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 33,
+      "repeated_cell_count": 159,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        3,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.1503999999999996,
+      "mean_planning_time_ms": 0.0014233309128839108
+    },
+    {
+      "episode_index": 12,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -44.73999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 24,
+      "repeated_cell_count": 157,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        4,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.894799999999999,
+      "mean_planning_time_ms": 0.0017716688388544652
+    },
+    {
+      "episode_index": 13,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -64.24000000000008,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 42,
+      "repeated_cell_count": 145,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        3,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.2848000000000015,
+      "mean_planning_time_ms": 0.0014466692745271656
+    },
+    {
+      "episode_index": 14,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -76.59999999999997,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 50,
+      "repeated_cell_count": 153,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        3,
+        11
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.5319999999999994,
+      "mean_planning_time_ms": 0.0014455555679483546
+    },
+    {
+      "episode_index": 15,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -44.419999999999966,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 34,
+      "repeated_cell_count": 141,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        9,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.8883999999999993,
+      "mean_planning_time_ms": 0.0014583340897742244
+    },
+    {
+      "episode_index": 16,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -73.96,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 48,
+      "repeated_cell_count": 161,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        3,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.4791999999999998,
+      "mean_planning_time_ms": 0.0014399983532105882
+    },
+    {
+      "episode_index": 17,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -48.219999999999985,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 27,
+      "repeated_cell_count": 148,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        6,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9643999999999997,
+      "mean_planning_time_ms": 0.001748335004473726
+    },
+    {
+      "episode_index": 18,
+      "success": false,
+      "completed_targets": 2,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -18.77999999999997,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 25,
+      "repeated_cell_count": 124,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        5,
+        7
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.3755999999999994,
+      "mean_planning_time_ms": 0.0014027787579430474
+    },
+    {
+      "episode_index": 19,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -44.519999999999925,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 34,
+      "repeated_cell_count": 144,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        8,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.8903999999999985,
+      "mean_planning_time_ms": 0.0014588880326805843
+    },
+    {
+      "episode_index": 20,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -48.87999999999997,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 28,
+      "repeated_cell_count": 156,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9775999999999994,
+      "mean_planning_time_ms": 0.0018272248174374302
+    },
+    {
+      "episode_index": 21,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -18.200000000000003,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 10,
+      "repeated_cell_count": 122,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        8,
+        9
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.36400000000000005,
+      "mean_planning_time_ms": 0.0016405544657674101
+    },
+    {
+      "episode_index": 22,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -49.65999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 29,
+      "repeated_cell_count": 166,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        2
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.993199999999999,
+      "mean_planning_time_ms": 0.0013950028611967962
+    },
+    {
+      "episode_index": 23,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -50.55999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 28,
+      "repeated_cell_count": 162,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        3,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.011199999999999,
+      "mean_planning_time_ms": 0.0015305578320597608
+    },
+    {
+      "episode_index": 24,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -63.159999999999954,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 41,
+      "repeated_cell_count": 146,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.263199999999999,
+      "mean_planning_time_ms": 0.0015516671636659238
+    },
+    {
+      "episode_index": 25,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -69.10000000000002,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 46,
+      "repeated_cell_count": 160,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.3820000000000006,
+      "mean_planning_time_ms": 0.0015161090737415685
+    },
+    {
+      "episode_index": 26,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -41.11999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 32,
+      "repeated_cell_count": 146,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        11,
+        2
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.8223999999999988,
+      "mean_planning_time_ms": 0.0014677753723743889
+    },
+    {
+      "episode_index": 27,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -39.579999999999934,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 20,
+      "repeated_cell_count": 159,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.7915999999999986,
+      "mean_planning_time_ms": 0.0019300004674328698
+    },
+    {
+      "episode_index": 28,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -44.17999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 34,
+      "repeated_cell_count": 148,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        8,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.883599999999999,
+      "mean_planning_time_ms": 0.0015538890794333485
+    },
+    {
+      "episode_index": 29,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -31.31999999999993,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 21,
+      "repeated_cell_count": 132,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        5,
+        10
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6263999999999986,
+      "mean_planning_time_ms": 0.0014522200217470527
+    },
+    {
+      "episode_index": 30,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -53.07999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 30,
+      "repeated_cell_count": 150,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        5,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.061599999999999,
+      "mean_planning_time_ms": 0.001457776913108925
+    },
+    {
+      "episode_index": 31,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -48.81999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 27,
+      "repeated_cell_count": 157,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9763999999999988,
+      "mean_planning_time_ms": 0.0015427765902131796
+    },
+    {
+      "episode_index": 32,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -39.99999999999993,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 20,
+      "repeated_cell_count": 158,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        2
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.7999999999999986,
+      "mean_planning_time_ms": 0.0015900004655122757
+    },
+    {
+      "episode_index": 33,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -66.64,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 42,
+      "repeated_cell_count": 166,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.3328,
+      "mean_planning_time_ms": 0.0014805551877038346
+    },
+    {
+      "episode_index": 34,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -61.18000000000004,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 39,
+      "repeated_cell_count": 160,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.223600000000001,
+      "mean_planning_time_ms": 0.0015527753728545373
+    },
+    {
+      "episode_index": 35,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -67.12000000000006,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 42,
+      "repeated_cell_count": 160,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.3424000000000011,
+      "mean_planning_time_ms": 0.0018705555703490973
+    },
+    {
+      "episode_index": 36,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -56.91999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 34,
+      "repeated_cell_count": 158,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        3,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.138399999999999,
+      "mean_planning_time_ms": 0.0029422236063207188
+    },
+    {
+      "episode_index": 37,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -48.399999999999956,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 29,
+      "repeated_cell_count": 163,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9679999999999991,
+      "mean_planning_time_ms": 0.0031083353355319965
+    },
+    {
+      "episode_index": 38,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": true,
+      "episode_reward": -45.15999999999992,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 23,
+      "repeated_cell_count": 158,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9031999999999983,
+      "mean_planning_time_ms": 0.0034511060221120715
+    },
+    {
+      "episode_index": 39,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -47.139999999999965,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 28,
+      "repeated_cell_count": 156,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9427999999999993,
+      "mean_planning_time_ms": 0.0015922223812797004
+    },
+    {
+      "episode_index": 40,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -33.95999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 24,
+      "repeated_cell_count": 129,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        10,
+        2
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6791999999999987,
+      "mean_planning_time_ms": 0.001627778530948692
+    },
+    {
+      "episode_index": 41,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -36.93999999999999,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 28,
+      "repeated_cell_count": 142,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        5,
+        10
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.7387999999999998,
+      "mean_planning_time_ms": 0.001954998394163946
+    },
+    {
+      "episode_index": 42,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -49.359999999999964,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 30,
+      "repeated_cell_count": 147,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        7,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9871999999999993,
+      "mean_planning_time_ms": 0.0016788903546209137
+    },
+    {
+      "episode_index": 43,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -44.33999999999999,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 32,
+      "repeated_cell_count": 142,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        4,
+        9
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.8867999999999998,
+      "mean_planning_time_ms": 0.0015905560252981053
+    },
+    {
+      "episode_index": 44,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -45.75999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 25,
+      "repeated_cell_count": 153,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        5,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.915199999999999,
+      "mean_planning_time_ms": 0.0017166635694189204
+    },
+    {
+      "episode_index": 45,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -55.659999999999954,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 36,
+      "repeated_cell_count": 145,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        9,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.113199999999999,
+      "mean_planning_time_ms": 0.001627776914069222
+    },
+    {
+      "episode_index": 46,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -50.31999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 29,
+      "repeated_cell_count": 157,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        3,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.006399999999999,
+      "mean_planning_time_ms": 0.0016194422237782015
+    },
+    {
+      "episode_index": 47,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": true,
+      "episode_reward": -43.59999999999993,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 23,
+      "repeated_cell_count": 159,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.8719999999999986,
+      "mean_planning_time_ms": 0.00161166794391142
+    },
+    {
+      "episode_index": 48,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -55.89999999999999,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 33,
+      "repeated_cell_count": 152,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.1179999999999999,
+      "mean_planning_time_ms": 0.0015916658513661888
+    },
+    {
+      "episode_index": 49,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -41.739999999999924,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 22,
+      "repeated_cell_count": 160,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        2
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.8347999999999984,
+      "mean_planning_time_ms": 0.0018516662142549951
+    },
+    {
+      "episode_index": 50,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -50.61999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 30,
+      "repeated_cell_count": 164,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.0123999999999989,
+      "mean_planning_time_ms": 0.0016916688764467835
+    },
+    {
+      "episode_index": 51,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -55.23999999999997,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 31,
+      "repeated_cell_count": 162,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.1047999999999993,
+      "mean_planning_time_ms": 0.0016277756205656463
+    },
+    {
+      "episode_index": 52,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -32.29999999999999,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 25,
+      "repeated_cell_count": 128,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        6,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6459999999999998,
+      "mean_planning_time_ms": 0.0022638896350852316
+    },
+    {
+      "episode_index": 53,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -30.01999999999996,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 22,
+      "repeated_cell_count": 118,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        11,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6003999999999992,
+      "mean_planning_time_ms": 0.001853335157243742
+    },
+    {
+      "episode_index": 54,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -40.95999999999998,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 31,
+      "repeated_cell_count": 145,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        7,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.8191999999999996,
+      "mean_planning_time_ms": 0.0022577771839375296
+    },
+    {
+      "episode_index": 55,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -31.659999999999933,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 24,
+      "repeated_cell_count": 122,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        6,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6331999999999987,
+      "mean_planning_time_ms": 0.00171388803412103
+    },
+    {
+      "episode_index": 56,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -33.69999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 15,
+      "repeated_cell_count": 153,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        6,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6739999999999988,
+      "mean_planning_time_ms": 0.0015988884519578682
+    },
+    {
+      "episode_index": 57,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -48.05999999999993,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 38,
+      "repeated_cell_count": 141,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        10,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9611999999999986,
+      "mean_planning_time_ms": 0.0015266672966794835
+    },
+    {
+      "episode_index": 58,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -50.01999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 29,
+      "repeated_cell_count": 158,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.0003999999999988,
+      "mean_planning_time_ms": 0.0017577743468185265
+    },
+    {
+      "episode_index": 59,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -56.31999999999999,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 35,
+      "repeated_cell_count": 158,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        3,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.1263999999999998,
+      "mean_planning_time_ms": 0.0017083330830145213
+    },
+    {
+      "episode_index": 60,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -50.01999999999997,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 29,
+      "repeated_cell_count": 155,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        3,
+        2
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.0003999999999993,
+      "mean_planning_time_ms": 0.0018366661000375946
+    },
+    {
+      "episode_index": 61,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -37.57999999999997,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 26,
+      "repeated_cell_count": 150,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        8
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.7515999999999994,
+      "mean_planning_time_ms": 0.0015977808895210426
+    },
+    {
+      "episode_index": 62,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -30.71999999999999,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 24,
+      "repeated_cell_count": 151,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6143999999999998,
+      "mean_planning_time_ms": 0.0016066666123353774
+    },
+    {
+      "episode_index": 63,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -40.41999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 21,
+      "repeated_cell_count": 160,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.8083999999999988,
+      "mean_planning_time_ms": 0.0016844436888479525
+    },
+    {
+      "episode_index": 64,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -26.639999999999965,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 20,
+      "repeated_cell_count": 144,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.5327999999999993,
+      "mean_planning_time_ms": 0.0017483320940906804
+    },
+    {
+      "episode_index": 65,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -33.15999999999997,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 25,
+      "repeated_cell_count": 142,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        10
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6631999999999993,
+      "mean_planning_time_ms": 0.0016872227812806766
+    },
+    {
+      "episode_index": 66,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -50.98,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 29,
+      "repeated_cell_count": 159,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.0195999999999998,
+      "mean_planning_time_ms": 0.0015600025007087323
+    },
+    {
+      "episode_index": 67,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -51.27999999999996,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 28,
+      "repeated_cell_count": 165,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.0255999999999992,
+      "mean_planning_time_ms": 0.0014533330815740758
+    },
+    {
+      "episode_index": 68,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -49.41999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 27,
+      "repeated_cell_count": 164,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9883999999999987,
+      "mean_planning_time_ms": 0.0014566667636649476
+    },
+    {
+      "episode_index": 69,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -53.01999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 30,
+      "repeated_cell_count": 160,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.0603999999999991,
+      "mean_planning_time_ms": 0.0016433332348242402
+    },
+    {
+      "episode_index": 70,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -49.83999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 28,
+      "repeated_cell_count": 156,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9967999999999989,
+      "mean_planning_time_ms": 0.0015155551308352086
+    },
+    {
+      "episode_index": 71,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -43.419999999999945,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 25,
+      "repeated_cell_count": 157,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        3,
+        2
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.868399999999999,
+      "mean_planning_time_ms": 0.001549445894650287
+    },
+    {
+      "episode_index": 72,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -46.71999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 26,
+      "repeated_cell_count": 161,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9343999999999988,
+      "mean_planning_time_ms": 0.001951106888655987
+    },
+    {
+      "episode_index": 73,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -56.61999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 32,
+      "repeated_cell_count": 157,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.1323999999999987,
+      "mean_planning_time_ms": 0.0014633344512225853
+    },
+    {
+      "episode_index": 74,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -63.51999999999997,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 42,
+      "repeated_cell_count": 157,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.2703999999999993,
+      "mean_planning_time_ms": 0.0014905539703451926
+    },
+    {
+      "episode_index": 75,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -49.35999999999996,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 29,
+      "repeated_cell_count": 156,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9871999999999992,
+      "mean_planning_time_ms": 0.0017877797492676312
+    },
+    {
+      "episode_index": 76,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -48.899999999999984,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 37,
+      "repeated_cell_count": 145,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        11,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9779999999999996,
+      "mean_planning_time_ms": 0.001510551859003802
+    },
+    {
+      "episode_index": 77,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -42.47999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 33,
+      "repeated_cell_count": 140,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        7,
+        1
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.8495999999999989,
+      "mean_planning_time_ms": 0.0015344477206882504
+    },
+    {
+      "episode_index": 78,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -41.61999999999993,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 21,
+      "repeated_cell_count": 156,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.8323999999999987,
+      "mean_planning_time_ms": 0.0015766615332621667
+    },
+    {
+      "episode_index": 79,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -46.77999999999996,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 26,
+      "repeated_cell_count": 148,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        6,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9355999999999992,
+      "mean_planning_time_ms": 0.0016972209171702464
+    },
+    {
+      "episode_index": 80,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -58.59999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 37,
+      "repeated_cell_count": 156,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.171999999999999,
+      "mean_planning_time_ms": 0.001533888603767587
+    },
+    {
+      "episode_index": 81,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -55.47999999999993,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 34,
+      "repeated_cell_count": 156,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.1095999999999986,
+      "mean_planning_time_ms": 0.001733890450042155
+    },
+    {
+      "episode_index": 82,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -56.83999999999997,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 43,
+      "repeated_cell_count": 150,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        8
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.1367999999999994,
+      "mean_planning_time_ms": 0.0016138917999342084
+    },
+    {
+      "episode_index": 83,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -46.95999999999996,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 24,
+      "repeated_cell_count": 131,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        10,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9391999999999991,
+      "mean_planning_time_ms": 0.001566108807714449
+    },
+    {
+      "episode_index": 84,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -46.17999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 26,
+      "repeated_cell_count": 156,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9235999999999989,
+      "mean_planning_time_ms": 0.0015099985628492301
+    },
+    {
+      "episode_index": 85,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -45.239999999999945,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 36,
+      "repeated_cell_count": 143,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        8
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9047999999999989,
+      "mean_planning_time_ms": 0.0018227780755195352
+    },
+    {
+      "episode_index": 86,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -40.43999999999991,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 30,
+      "repeated_cell_count": 139,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        7
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.8087999999999983,
+      "mean_planning_time_ms": 0.0016666657757014036
+    },
+    {
+      "episode_index": 87,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -54.81999999999999,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 35,
+      "repeated_cell_count": 154,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        1,
+        2
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.0963999999999998,
+      "mean_planning_time_ms": 0.001839444222342637
+    },
+    {
+      "episode_index": 88,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -26.35999999999999,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 19,
+      "repeated_cell_count": 147,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        6,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.5271999999999998,
+      "mean_planning_time_ms": 0.0016972196236666706
+    },
+    {
+      "episode_index": 89,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -38.01999999999994,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 30,
+      "repeated_cell_count": 144,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        4,
+        10
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.7603999999999987,
+      "mean_planning_time_ms": 0.001773890431245996
+    },
+    {
+      "episode_index": 90,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -56.919999999999945,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 33,
+      "repeated_cell_count": 159,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        4
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.138399999999999,
+      "mean_planning_time_ms": 0.0018750016655152042
+    },
+    {
+      "episode_index": 91,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -29.559999999999924,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 9,
+      "repeated_cell_count": 129,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        8
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.5911999999999985,
+      "mean_planning_time_ms": 0.001632223979363011
+    },
+    {
+      "episode_index": 92,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -50.859999999999935,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 31,
+      "repeated_cell_count": 158,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        2,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.0171999999999988,
+      "mean_planning_time_ms": 0.001593329620340632
+    },
+    {
+      "episode_index": 93,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -55.599999999999966,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 34,
+      "repeated_cell_count": 144,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        7,
+        3
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.1119999999999992,
+      "mean_planning_time_ms": 0.0017044448112655017
+    },
+    {
+      "episode_index": 94,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -31.939999999999937,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 26,
+      "repeated_cell_count": 128,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        6,
+        2
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.6387999999999987,
+      "mean_planning_time_ms": 0.0016888891372622715
+    },
+    {
+      "episode_index": 95,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -37.11999999999993,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 18,
+      "repeated_cell_count": 133,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        8,
+        6
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.7423999999999986,
+      "mean_planning_time_ms": 0.0015977799193933606
+    },
+    {
+      "episode_index": 96,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -46.47999999999995,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 27,
+      "repeated_cell_count": 156,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        3,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.929599999999999,
+      "mean_planning_time_ms": 0.0017116661183536053
+    },
+    {
+      "episode_index": 97,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -46.779999999999944,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 27,
+      "repeated_cell_count": 155,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        0,
+        7
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.9355999999999989,
+      "mean_planning_time_ms": 0.0016238892890719904
+    },
+    {
+      "episode_index": 98,
+      "success": false,
+      "completed_targets": 0,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -63.339999999999996,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 39,
+      "repeated_cell_count": 158,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        3,
+        0
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -1.2668,
+      "mean_planning_time_ms": 0.0026833320993723143
+    },
+    {
+      "episode_index": 99,
+      "success": false,
+      "completed_targets": 1,
+      "total_targets": 3,
+      "returned_to_base": false,
+      "episode_reward": -25.079999999999977,
+      "episode_length": 180,
+      "path_length": 180,
+      "collision_count": 16,
+      "repeated_cell_count": 143,
+      "remaining_battery": 0.0,
+      "done_reason": "battery_out",
+      "agent_final_position": [
+        7,
+        5
+      ],
+      "base_position": [
+        0,
+        0
+      ],
+      "shortest_possible_path_length": 44,
+      "path_efficiency": 0.0,
+      "normalized_reward": -0.5015999999999995,
+      "mean_planning_time_ms": 0.0020577772779183257
+    }
+  ],
+  "replay_paths": {
+    "failure_episode": "replays\\exp00_multitask_random\\failure_episode.json"
+  }
+}

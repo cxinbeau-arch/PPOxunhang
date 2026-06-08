@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NavAgent Replay - exp03_curriculum_stage1_ppo - success</title>
+  <style>
+    body { font-family: Arial, "Microsoft YaHei", sans-serif; margin: 20px; color: #172033; background: #f8fafc; }
+    h1 { font-size: 22px; margin: 0 0 16px; }
+    .layout { display: grid; grid-template-columns: minmax(320px, 620px) minmax(280px, 1fr); gap: 20px; align-items: start; }
+    .panel { background: #fff; border: 1px solid #dbe3ef; border-radius: 8px; padding: 14px; }
+    canvas { width: 100%; max-width: 620px; aspect-ratio: 1; border: 1px solid #cbd5e1; background: #fff; display: block; }
+    button { margin: 8px 4px 8px 0; padding: 7px 10px; border: 1px solid #94a3b8; background: #fff; border-radius: 6px; cursor: pointer; }
+    input[type=range] { width: 100%; }
+    pre { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px; overflow: auto; max-height: 260px; }
+    .metric { line-height: 1.8; }
+    .bars { display: grid; gap: 8px; margin-top: 8px; }
+    .bar-row { display: grid; grid-template-columns: 52px 1fr 56px; align-items: center; gap: 8px; }
+    .bar-bg { height: 12px; background: #e2e8f0; border-radius: 999px; overflow: hidden; }
+    .bar-fill { height: 12px; background: #2563eb; }
+    .warn { color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 8px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>NavAgent Replay - exp03_curriculum_stage1_ppo - success</h1>
+  <div class="layout">
+    <div class="panel">
+      <canvas id="grid" width="640" height="640"></canvas>
+      <input id="slider" type="range" min="0" max="0" value="0">
+      <div>
+        <button id="prev">上一步</button>
+        <button id="next">下一步</button>
+        <button id="play">播放/暂停</button>
+        <button id="reset">重置</button>
+      </div>
+      <label>播放间隔 ms <input id="speed" type="range" min="80" max="1200" value="300"></label>
+    </div>
+    <div class="panel">
+      <div class="metric" id="status"></div>
+      <h3>Action Probabilities</h3>
+      <div id="probs"></div>
+      <h3>Step Info</h3>
+      <pre id="stepInfo"></pre>
+      <h3>Summary</h3>
+      <pre id="summary"></pre>
+    </div>
+  </div>
+  <script id="payload" type="application/json">{"run_name": "exp03_curriculum_stage1_ppo", "episode_type": "success", "policy": "ppo", "use_planner": false, "steps": [{"step": 0, "agent_pos": [7, 6], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 35.0, "max_battery": 35.0, "action": "start", "reward": 0.0, "cum_reward": 0.0, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 0, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [1, 6], "current_target": [1, 6], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": null}, {"step": 1, "agent_pos": [6, 6], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 34.0, "max_battery": 35.0, "action": "left", "reward": 0.185, "cum_reward": 0.185, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 0, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [1, 6], "current_target": [1, 6], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.0007787583163008094, "down": 0.0005202948814257979, "left": 0.9984875917434692, "right": 2.1085709249746287e-06, "stay": 0.000211198246688582}}, {"step": 2, "agent_pos": [5, 6], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 33.0, "max_battery": 35.0, "action": "left", "reward": 0.185, "cum_reward": 0.37, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 0, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [1, 6], "current_target": [1, 6], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.0012195503804832697, "down": 0.0008149525383487344, "left": 0.9976955056190491, "right": 4.179460120212752e-06, "stay": 0.00026582664577290416}}, {"step": 3, "agent_pos": [4, 6], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 32.0, "max_battery": 35.0, "action": "left", "reward": 0.185, "cum_reward": 0.5549999999999999, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 0, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [1, 6], "current_target": [1, 6], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.0023598659317940474, "down": 0.0016141349915415049, "left": 0.9956198334693909, "right": 1.229757435794454e-05, "stay": 0.0003937820147257298}}, {"step": 4, "agent_pos": [3, 6], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 31.0, "max_battery": 35.0, "action": "left", "reward": 0.185, "cum_reward": 0.74, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 0, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [1, 6], "current_target": [1, 6], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.006455922033637762, "down": 0.004686217289417982, "left": 0.9880109429359436, "right": 7.011459820205346e-05, "stay": 0.0007768898503854871}}, {"step": 5, "agent_pos": [2, 6], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 30.0, "max_battery": 35.0, "action": "left", "reward": 0.185, "cum_reward": 0.925, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 0, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [1, 6], "current_target": [1, 6], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.029478171840310097, "down": 0.023455575108528137, "left": 0.9435566067695618, "right": 0.0010847820667549968, "stay": 0.0024248764384537935}}, {"step": 6, "agent_pos": [1, 6], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [[1, 6]], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 29.0, "max_battery": 35.0, "action": "left", "reward": 10.185, "cum_reward": 11.110000000000001, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 0, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [2, 7], "current_target": [2, 7], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.18239890038967133, "down": 0.16194690763950348, "left": 0.6035430431365967, "right": 0.04188050702214241, "stay": 0.01023057196289301}}, {"step": 7, "agent_pos": [2, 6], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [[1, 6]], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 28.0, "max_battery": 35.0, "action": "right", "reward": 0.185, "cum_reward": 11.295000000000002, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 1, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [2, 7], "current_target": [2, 7], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 3.128292883047834e-05, "down": 0.29185155034065247, "left": 0.04704267904162407, "right": 0.6586902141571045, "stay": 0.002384266583248973}}, {"step": 8, "agent_pos": [2, 7], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [[1, 6], [2, 7]], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 27.0, "max_battery": 35.0, "action": "down", "reward": 10.185, "cum_reward": 21.480000000000004, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 1, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [0, 0], "current_target": [0, 0], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.015398153103888035, "down": 0.760149359703064, "left": 0.07643572241067886, "right": 0.14329135417938232, "stay": 0.004725360311567783}}, {"step": 9, "agent_pos": [2, 6], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [[1, 6], [2, 7]], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 26.0, "max_battery": 35.0, "action": "up", "reward": 0.185, "cum_reward": 21.665000000000003, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 2, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [0, 0], "current_target": [0, 0], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.9978358149528503, "down": 2.4878479507606244e-06, "left": 0.0013938663760200143, "right": 0.00047258762060664594, "stay": 0.00029523615376092494}}, {"step": 10, "agent_pos": [2, 5], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [[1, 6], [2, 7]], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 25.0, "max_battery": 35.0, "action": "up", "reward": 0.185, "cum_reward": 21.85, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 2, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [0, 0], "current_target": [0, 0], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.9964331388473511, "down": 3.695527084346395e-06, "left": 0.0027102900203317404, "right": 0.00047892023576423526, "stay": 0.0003739504318218678}}, {"step": 11, "agent_pos": [2, 4], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [[1, 6], [2, 7]], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 24.0, "max_battery": 35.0, "action": "up", "reward": 0.185, "cum_reward": 22.035, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 2, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [0, 0], "current_target": [0, 0], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.9925932288169861, "down": 6.680470050923759e-06, "left": 0.00636645732447505, "right": 0.0005080915871076286, "stay": 0.0005256569129414856}}, {"step": 12, "agent_pos": [2, 3], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [[1, 6], [2, 7]], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 23.0, "max_battery": 35.0, "action": "up", "reward": 0.185, "cum_reward": 22.22, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 2, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [0, 0], "current_target": [0, 0], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.9972078204154968, "down": 1.001070995698683e-05, "left": 0.0020358406472951174, "right": 0.00040308627649210393, "stay": 0.0003432131197769195}}, {"step": 13, "agent_pos": [2, 2], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [[1, 6], [2, 7]], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 22.0, "max_battery": 35.0, "action": "up", "reward": 0.185, "cum_reward": 22.404999999999998, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 2, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [0, 0], "current_target": [0, 0], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.9159330725669861, "down": 5.922591299167834e-05, "left": 0.08147674053907394, "right": 0.0007570834131911397, "stay": 0.0017738941824063659}}, {"step": 14, "agent_pos": [2, 1], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [[1, 6], [2, 7]], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 21.0, "max_battery": 35.0, "action": "up", "reward": 0.185, "cum_reward": 22.589999999999996, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 2, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [0, 0], "current_target": [0, 0], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.9617800116539001, "down": 0.00021375331562012434, "left": 0.03544401377439499, "right": 0.0007909884443506598, "stay": 0.0017713161651045084}}, {"step": 15, "agent_pos": [1, 1], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [[1, 6], [2, 7]], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 20.0, "max_battery": 35.0, "action": "left", "reward": 0.185, "cum_reward": 22.774999999999995, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 2, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [0, 0], "current_target": [0, 0], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.13153992593288422, "down": 0.0011496749939396977, "left": 0.8623714447021484, "right": 0.0006067896611057222, "stay": 0.004332216456532478}}, {"step": 16, "agent_pos": [0, 1], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [[1, 6], [2, 7]], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 19.0, "max_battery": 35.0, "action": "left", "reward": 0.185, "cum_reward": 22.959999999999994, "done": false, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 2, "shortest_possible_path_length": 15, "done_reason": "running", "llm_subgoal": [0, 0], "current_target": [0, 0], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.11756264418363571, "down": 5.677801891579293e-05, "left": 0.8386663794517517, "right": 0.034980811178684235, "stay": 0.008733367547392845}}, {"step": 17, "agent_pos": [0, 0], "base_pos": [0, 0], "targets": [[1, 6], [2, 7]], "visited_targets": [[1, 6], [2, 7]], "obstacles": [[1, 2], [1, 4]], "grid_size": [8, 8], "battery": 18.0, "max_battery": 35.0, "action": "up", "reward": 20.185, "cum_reward": 43.144999999999996, "done": true, "info": {"grid_size": [8, 8], "max_battery": 35.0, "max_steps": 120, "collision_count": 0, "revisit_count": 0, "repeated_cell_count": 2, "shortest_possible_path_length": 15, "done_reason": "success", "llm_subgoal": [0, 0], "current_target": [0, 0], "planner_output": null, "planning_time_ms": 0.0}, "action_probs": {"up": 0.8535987734794617, "down": 0.004107189364731312, "left": 0.02685924619436264, "right": 0.10568917542695999, "stay": 0.009745540097355843}}], "summary": {"success": true, "completed_targets": 2, "total_targets": 2, "returned_to_base": true, "episode_reward": 43.144999999999996, "episode_length": 17, "path_length": 17, "reason_done": "success", "done_reason": "success", "remaining_battery": 18.0, "collision_count": 0, "repeated_cell_count": 2, "path_efficiency": 0.8823529411764706}, "config": {"level": "randomized", "grid_size": [8, 8], "base": [0, 0], "start": [0, 0], "targets": [[10, 10], [2, 9], [9, 2]], "obstacles": [], "max_steps": 120, "max_battery": 120, "reward_mode": "dense", "randomized_each_episode": true}, "memory": [], "has_action_probs": true, "source_path": "replays\\exp03_curriculum_stage1_ppo\\success_episode.json"}</script>
+  <script>
+    const replay = JSON.parse(document.getElementById("payload").textContent);
+    const steps = replay.steps || [];
+    const canvas = document.getElementById("grid");
+    const ctx = canvas.getContext("2d");
+    const slider = document.getElementById("slider");
+    const statusEl = document.getElementById("status");
+    const probsEl = document.getElementById("probs");
+    const stepInfoEl = document.getElementById("stepInfo");
+    const summaryEl = document.getElementById("summary");
+    const speedEl = document.getElementById("speed");
+    let timer = null;
+    slider.max = Math.max(0, steps.length - 1);
+    summaryEl.textContent = JSON.stringify(replay.summary || {}, null, 2);
+
+    function drawCircle(x, y, cell, color, radiusFactor) {
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.arc(x * cell + cell / 2, y * cell + cell / 2, cell * radiusFactor, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    function draw(index) {
+      const step = steps[index];
+      if (!step) return;
+      const gridSize = step.grid_size || [12, 12];
+      const w = gridSize[0];
+      const h = gridSize[1];
+      const cell = Math.min(canvas.width / w, canvas.height / h);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.strokeStyle = "#e2e8f0";
+      ctx.lineWidth = 1;
+      for (let y = 0; y < h; y++) {
+        for (let x = 0; x < w; x++) {
+          ctx.strokeRect(x * cell, y * cell, cell, cell);
+        }
+      }
+      for (const pos of step.obstacles || []) {
+        ctx.fillStyle = "#334155";
+        ctx.fillRect(pos[0] * cell, pos[1] * cell, cell, cell);
+      }
+      const trajectory = steps.slice(0, index + 1).map(item => item.agent_pos).filter(Boolean);
+      if (trajectory.length > 1) {
+        ctx.strokeStyle = "#64748b";
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(trajectory[0][0] * cell + cell / 2, trajectory[0][1] * cell + cell / 2);
+        for (const pos of trajectory.slice(1)) ctx.lineTo(pos[0] * cell + cell / 2, pos[1] * cell + cell / 2);
+        ctx.stroke();
+      }
+      const visited = new Set((step.visited_targets || []).map(pos => `${pos[0]},${pos[1]}`));
+      for (const pos of step.targets || []) {
+        drawCircle(pos[0], pos[1], cell, visited.has(`${pos[0]},${pos[1]}`) ? "#16a34a" : "#f97316", 0.28);
+      }
+      if (step.base_pos) {
+        ctx.fillStyle = "#2563eb";
+        ctx.fillRect(step.base_pos[0] * cell + 5, step.base_pos[1] * cell + 5, cell - 10, cell - 10);
+      }
+      if (step.agent_pos) drawCircle(step.agent_pos[0], step.agent_pos[1], cell, "#dc2626", 0.33);
+      statusEl.innerHTML = [
+        `Step: ${step.step} / ${steps.length - 1}`,
+        `Agent: ${JSON.stringify(step.agent_pos)}`,
+        `Action: ${step.action}`,
+        `Reward: ${Number(step.reward || 0).toFixed(3)}`,
+        `Cum reward: ${Number(step.cum_reward || 0).toFixed(3)}`,
+        `Battery: ${Number(step.battery || 0).toFixed(1)}`,
+        `Done: ${Boolean(step.done)}`
+      ].join("<br>");
+      renderProbs(step.action_probs);
+      stepInfoEl.textContent = JSON.stringify(step, null, 2);
+      slider.value = index;
+    }
+
+    function renderProbs(probs) {
+      if (!probs) {
+        probsEl.innerHTML = '<div class="warn">该 replay 未保存 action_probs</div>';
+        return;
+      }
+      const rows = Object.entries(probs).map(([name, value]) => {
+        const pct = Math.max(0, Math.min(1, Number(value || 0))) * 100;
+        return `<div class="bar-row"><span>${name}</span><div class="bar-bg"><div class="bar-fill" style="width:${pct}%"></div></div><span>${pct.toFixed(1)}%</span></div>`;
+      }).join("");
+      probsEl.innerHTML = `<div class="bars">${rows}</div>`;
+    }
+
+    function setIndex(value) {
+      const next = Math.max(0, Math.min(steps.length - 1, value));
+      draw(next);
+    }
+
+    slider.addEventListener("input", () => setIndex(Number(slider.value)));
+    document.getElementById("prev").onclick = () => setIndex(Number(slider.value) - 1);
+    document.getElementById("next").onclick = () => setIndex(Number(slider.value) + 1);
+    document.getElementById("reset").onclick = () => setIndex(0);
+    document.getElementById("play").onclick = () => {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+        return;
+      }
+      timer = setInterval(() => {
+        let next = Number(slider.value) + 1;
+        if (next >= steps.length) next = 0;
+        draw(next);
+      }, Number(speedEl.value));
+    };
+    draw(0);
+  </script>
+</body>
+</html>

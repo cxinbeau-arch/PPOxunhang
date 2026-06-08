@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>NavAgent-PPO 自主巡检智能体可视化</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      margin: 32px;
+      background: #f6f7fb;
+      color: #111827;
+    }
+    h1 { margin-bottom: 8px; }
+    .note {
+      color: #475569;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(15,23,42,.06);
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+      font-size: 14px;
+    }
+    th {
+      background: #111827;
+      color: white;
+    }
+    a {
+      color: #2563eb;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    code {
+      background: #eef2ff;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>NavAgent-PPO 自主巡检智能体可视化</h1>
+  <div class="note">
+    本页面展示 PPO 自主巡检智能体的真实 episode replay。点击“打开回放”即可查看对应阶段的轨迹、动作、奖励和电量变化。
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>run_name</th>
+        <th>replay 文件</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>exp00_astar</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/exp00_astar_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp00_greedy</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/exp00_greedy_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp00_multitask_astar</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/exp00_multitask_astar_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp00_multitask_greedy</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/exp00_multitask_greedy_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp00_multitask_random</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/exp00_multitask_random_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp00_obstacle_astar</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/exp00_obstacle_astar_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp00_obstacle_greedy</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/exp00_obstacle_greedy_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp00_obstacle_random</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/exp00_obstacle_random_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp00_random</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/exp00_random_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp00_randomized_astar</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/exp00_randomized_astar_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp00_randomized_greedy</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/exp00_randomized_greedy_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp00_randomized_greedy</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/exp00_randomized_greedy_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp00_randomized_random</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/exp00_randomized_random_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp01_basic_ppo</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/exp01_basic_ppo_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp03_curriculum_stage1_ppo</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/exp03_curriculum_stage1_ppo_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp03_curriculum_stage1_ppo</td>
+          <td>failure_or_worst_episode.json</td>
+          <td><a href="replays/exp03_curriculum_stage1_ppo_failure_or_worst_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>seed0</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/seed0_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>seed0</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/seed0_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>seed1</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/seed1_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>seed1</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/seed1_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>seed2</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/seed2_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>seed2</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/seed2_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp03_curriculum_stage1_ppo</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/exp03_curriculum_stage1_ppo_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp04_curriculum_stage2_ppo</td>
+          <td>best_partial_episode.json</td>
+          <td><a href="replays/exp04_curriculum_stage2_ppo_best_partial_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp04_curriculum_stage2_ppo</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/exp04_curriculum_stage2_ppo_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp04_curriculum_stage2_ppo</td>
+          <td>failure_or_worst_episode.json</td>
+          <td><a href="replays/exp04_curriculum_stage2_ppo_failure_or_worst_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>seed0</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/seed0_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>seed0</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/seed0_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp04_curriculum_stage2_ppo</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/exp04_curriculum_stage2_ppo_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp05_curriculum_stage3_ppo</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/exp05_curriculum_stage3_ppo_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp05_curriculum_stage3_ppo</td>
+          <td>failure_or_worst_episode.json</td>
+          <td><a href="replays/exp05_curriculum_stage3_ppo_failure_or_worst_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>seed0</td>
+          <td>failure_episode.json</td>
+          <td><a href="replays/seed0_failure_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>seed0</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/seed0_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+        <tr>
+          <td>exp05_curriculum_stage3_ppo</td>
+          <td>success_episode.json</td>
+          <td><a href="replays/exp05_curriculum_stage3_ppo_success_episode.html" target="_blank">打开回放</a></td>
+        </tr>
+        
+    </tbody>
+  </table>
+
+  
+</body>
+</html>
