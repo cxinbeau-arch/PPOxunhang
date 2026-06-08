@@ -59,17 +59,8 @@ items = []
 failures = []
 
 for p in json_files:
-    rel_parts = p.relative_to(replay_root).parts
-
-    # 对于 replays/exp03_xxx/seed0/success_episode.json 这种结构，
-    # run_name 应该显示为 exp03_xxx/seed0，导出的 HTML 文件名也要包含完整路径，
-    # 避免多个 seed0_success_episode.html 互相覆盖。
-    if len(rel_parts) >= 3:
-        run_name = "/".join(rel_parts[:-1])
-    else:
-        run_name = p.parent.name
-
-    out_name = safe_name("_".join(rel_parts).replace(".json", ".html"))
+    run_name = p.parent.name
+    out_name = safe_name(f"{run_name}_{p.stem}.html")
     out_path = REPLAY_OUT / out_name
 
     cmd = [
