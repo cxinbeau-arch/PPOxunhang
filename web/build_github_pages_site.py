@@ -14,6 +14,35 @@ REPLAY_OUT.mkdir(parents=True, exist_ok=True)
 def safe_name(s: str) -> str:
     return re.sub(r"[^A-Za-z0-9_.-]+", "_", s)
 
+def classify_run(run_name: str) -> tuple[int, str]:
+    name = run_name.lower()
+
+    if name.startswith("exp00"):
+        return 0, "Baseline / 启发式对比"
+    if "basic_ppo" in name:
+        return 1, "PPO Basic"
+    if "curriculum_stage1" in name or "stage1" in name:
+        return 2, "PPO Stage 1"
+    if "curriculum_stage2" in name or "stage2" in name:
+        return 3, "PPO Stage 2"
+    if "curriculum_stage3" in name or "stage3" in name:
+        return 4, "PPO Stage 3"
+    if name.startswith("seed"):
+        return 5, "Multi-seed Replay"
+    return 9, "Other"
+
+def replay_priority(file_name: str) -> int:
+    n = file_name.lower()
+    if "success" in n:
+        return 0
+    if "best_partial" in n or "partial" in n:
+        return 1
+    if "failure_or_worst" in n or "worst" in n:
+        return 2
+    if "failure" in n:
+        return 3
+    return 9
+
 replay_root = ROOT / "replays"
 json_files = []
 
@@ -21,7 +50,9 @@ for p in sorted(replay_root.rglob("*.json")):
     name = p.name.lower()
     if "evaluation" in name or "summary" in name:
         continue
-    if any(k in name for k in ["success", "failure", "worst", "partial", "episode", "live"]):
+
+    # 只展示成功 episode，隐藏 failure / worst / partial / live 等其他 replay。
+    if "success" in name:
         json_files.append(p)
 
 items = []
@@ -43,23 +74,60 @@ for p in json_files:
 
     try:
         subprocess.run(cmd, check=True)
-        items.append((run_name, p.name, out_path.relative_to(DOCS)))
+        section_order, section_name = classify_run(run_name)
+        items.append({
+            "run_name": run_name,
+            "replay_name": p.name,
+            "rel_path": out_path.relative_to(DOCS),
+            "section_order": section_order,
+            "section_name": section_name,
+            "replay_order": replay_priority(p.name),
+        })
         print(f"[OK] {p} -> {out_path}")
     except Exception as e:
         failures.append((str(p), str(e)))
         print(f"[FAIL] {p}: {e}")
 
-rows = []
-for run_name, replay_name, rel_path in items:
-    rows.append(
-        f"""
+items.sort(key=lambda x: (
+    x["section_order"],
+    x["run_name"],
+    x["replay_order"],
+    x["replay_name"]
+))
+
+grouped = {}
+for item in items:
+    grouped.setdefault((item["section_order"], item["section_name"]), []).append(item)
+
+sections_html = []
+for (_, section_name), rows in grouped.items():
+    row_html = []
+    for r in rows:
+        row_html.append(f"""
         <tr>
-          <td>{html.escape(run_name)}</td>
-          <td>{html.escape(replay_name)}</td>
-          <td><a href="{html.escape(str(rel_path))}" target="_blank">打开回放</a></td>
+          <td>{html.escape(r["run_name"])}</td>
+          <td>{html.escape(r["replay_name"])}</td>
+          <td><a href="{html.escape(str(r["rel_path"]))}" target="_blank">打开回放</a></td>
         </tr>
-        """
-    )
+        """)
+
+    sections_html.append(f"""
+    <section class="section-block">
+      <h2>{html.escape(section_name)}</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>run_name</th>
+            <th>replay 文件</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          {''.join(row_html)}
+        </tbody>
+      </table>
+    </section>
+    """)
 
 failure_block = ""
 if failures:
@@ -68,8 +136,10 @@ if failures:
         for p, err in failures
     )
     failure_block = f"""
-    <h2>导出失败文件</h2>
-    <ul>{failure_rows}</ul>
+    <section class="section-block">
+      <h2>导出失败文件</h2>
+      <ul>{failure_rows}</ul>
+    </section>
     """
 
 index_html = f"""<!doctype html>
@@ -84,11 +154,17 @@ index_html = f"""<!doctype html>
       background: #f6f7fb;
       color: #111827;
     }}
-    h1 {{ margin-bottom: 8px; }}
-    .note {{
-      color: #475569;
+    h1 {{
       margin-bottom: 24px;
-      line-height: 1.7;
+      font-size: 38px;
+    }}
+    h2 {{
+      margin: 0 0 14px 0;
+      font-size: 24px;
+      color: #0f172a;
+    }}
+    .section-block {{
+      margin-bottom: 36px;
     }}
     table {{
       border-collapse: collapse;
@@ -106,7 +182,7 @@ index_html = f"""<!doctype html>
       font-size: 14px;
     }}
     th {{
-      background: #111827;
+      background: #0f172a;
       color: white;
     }}
     a {{
@@ -114,7 +190,9 @@ index_html = f"""<!doctype html>
       font-weight: 700;
       text-decoration: none;
     }}
-    a:hover {{ text-decoration: underline; }}
+    a:hover {{
+      text-decoration: underline;
+    }}
     code {{
       background: #eef2ff;
       padding: 2px 6px;
@@ -124,22 +202,8 @@ index_html = f"""<!doctype html>
 </head>
 <body>
   <h1>NavAgent-PPO 自主巡检智能体可视化</h1>
-  <div class="note">
-    本页面展示 PPO 自主巡检智能体的真实 episode replay。点击“打开回放”即可查看对应阶段的轨迹、动作、奖励和电量变化。
-  </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>run_name</th>
-        <th>replay 文件</th>
-        <th>操作</th>
-      </tr>
-    </thead>
-    <tbody>
-      {''.join(rows)}
-    </tbody>
-  </table>
+  {''.join(sections_html)}
 
   {failure_block}
 </body>
@@ -149,7 +213,7 @@ index_html = f"""<!doctype html>
 (DOCS / "index.html").write_text(index_html, encoding="utf-8")
 (DOCS / ".nojekyll").write_text("", encoding="utf-8")
 
-print("\nGitHub Pages 静态站点生成完成")
+print("\\nGitHub Pages 静态站点生成完成")
 print(f"入口文件: {DOCS / 'index.html'}")
 print(f"成功导出: {len(items)} 个 replay")
 print(f"失败: {len(failures)} 个")
